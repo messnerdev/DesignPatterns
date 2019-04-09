@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID", "SOLID\SOLID.csproj", "{888B9490-9021-48A4-B983-21BD3B86F58A}"
 EndProject
@@ -21,9 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{22D754E8-33A1-4540-A93E-E9581A5DBE52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{749A7517-F83A-4798-BA55-98F06FD30EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{749A7517-F83A-4798-BA55-98F06FD30EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{845C42D3-7AA7-4972-BFB6-EBF34C81A546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{845C42D3-7AA7-4972-BFB6-EBF34C81A546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{845C42D3-7AA7-4972-BFB6-EBF34C81A546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{845C42D3-7AA7-4972-BFB6-EBF34C81A546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{845C42D3-7AA7-4972-BFB6-EBF34C81A546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +87,8 @@ Global
 		{22D754E8-33A1-4540-A93E-E9581A5DBE52} = {D6803680-ADD5-42AA-A1C5-2DC03F2A5935}
 		{749A7517-F83A-4798-BA55-98F06FD30EA2} = {D6803680-ADD5-42AA-A1C5-2DC03F2A5935}
 		{845C42D3-7AA7-4972-BFB6-EBF34C81A546} = {D6803680-ADD5-42AA-A1C5-2DC03F2A5935}
+		{01CFC0B4-0E76-4C69-9D9D-FF8A8FAF0276} = {D6803680-ADD5-42AA-A1C5-2DC03F2A5935}
+		{9CC5BCBC-24C5-41FE-B47A-6254DA4C5A84} = {D6803680-ADD5-42AA-A1C5-2DC03F2A5935}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EEBCB45-2C5D-4007-9CA0-C5432D499AF4}
