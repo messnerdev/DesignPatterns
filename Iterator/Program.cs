@@ -21,8 +21,7 @@ namespace Iterator
 
         private static void IteratorObjectExample()
         {
-            
-
+            var root = new Node<int>(1, new Node<int>(2), new Node<int>(3));
             var it = new InOrderIterator<int>(root);
             while (it.MoveNext())
             {
