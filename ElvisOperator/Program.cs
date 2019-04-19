@@ -1,0 +1,96 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace MonadElvisOperator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public void MyMethod(Person p)
+        {
+            //string postcode;
+            //if (p != null)
+            //{
+            //    if (HasMedicalRecord(p) && p.Address != null)
+            //    {
+            //        CheckAddress(p.Address);
+            //        if (p.Address.PostCode != null)
+            //        {
+            //            postcode = p.Address.PostCode;
+            //        }
+            //        else
+            //        {
+            //            postcode = "UNKNOWN";
+            //        }
+            //    }  
+            //}
+
+            string postcode = p.With(x => x.Address).With(x => x.PostCode);
+
+            postcode = p
+                .If(HasMedicalRecord)
+                .With(x => x.Address)
+                .Do(CheckAddress)
+                .Return(x => x.PostCode, "UNKNOWN");
+        }
+
+        private void CheckAddress(Address Address)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool HasMedicalRecord(Person person)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Person
+    {
+        public Address Address { get; set; }
+    }
+
+    public class Address
+    {
+        public string PostCode { get; set; }
+    }
+
+    public static class Maybe
+    {
+        public static TResult With<TInput, TResult>(this TInput o, Func<TInput, TResult> evaluator)
+            where TInput : class where TResult : class
+        {
+            return o == null ? null : evaluator(o);
+        }
+
+        public static TInput If<TInput>(this TInput o, Func<TInput, bool> evaluator)
+            where TInput : class
+        {
+            return o == null ? null : evaluator(o) ? o : null;
+        }
+
+        public static TInput Do<TInput>(this TInput o, Action<TInput> action)
+            where TInput : class
+        {
+            if (o == null) return null;
+            action(o);
+            return o;
+        }
+
+        public static TResult Return<TInput, TResult>(this TInput o, Func<TInput, TResult> evaluator, TResult failureValue)
+            where TInput : class where TResult : class
+        {
+            return (o == null) ? failureValue : evaluator(o);
+        }
+
+        public static TResult WithValue<TInput, TResult>(this TInput o, Func<TInput, TResult> evaluator)
+            where TInput : struct where TResult : class
+        {
+            return evaluator(o);
+        }
+    }
+}

@@ -57,9 +57,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "State\State.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bonus", "Bonus", "{73FDBF14-77B5-4F73-BF1D-BCB58FC8A283}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContinuationPassingStyle", "ContinuationPassingStyle\ContinuationPassingStyle.csproj", "{601BBF68-6D51-4FC3-8332-B1F68A65F0F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContinuationPassingStyle", "ContinuationPassingStyle\ContinuationPassingStyle.csproj", "{601BBF68-6D51-4FC3-8332-B1F68A65F0F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalInversionOfControl", "LocalInversionOfControl\LocalInversionOfControl.csproj", "{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalInversionOfControl", "LocalInversionOfControl\LocalInversionOfControl.csproj", "{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{9EE6455F-7D12-4342-863B-F615F2873C63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonadElvisOperator", "ElvisOperator\MonadElvisOperator.csproj", "{65E47F74-9EFB-48FA-8219-714BBD70FECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +171,14 @@ Global
 		{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE6455F-7D12-4342-863B-F615F2873C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE6455F-7D12-4342-863B-F615F2873C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE6455F-7D12-4342-863B-F615F2873C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE6455F-7D12-4342-863B-F615F2873C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E47F74-9EFB-48FA-8219-714BBD70FECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E47F74-9EFB-48FA-8219-714BBD70FECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E47F74-9EFB-48FA-8219-714BBD70FECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E47F74-9EFB-48FA-8219-714BBD70FECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,6 +208,8 @@ Global
 		{64EA6286-C165-4813-916E-69E48B38D5EF} = {303D6DF0-E2E0-4692-B4D0-119C80DC2A90}
 		{601BBF68-6D51-4FC3-8332-B1F68A65F0F6} = {73FDBF14-77B5-4F73-BF1D-BCB58FC8A283}
 		{7BCB7A58-13E2-49B7-B2EE-32B63E828FA7} = {73FDBF14-77B5-4F73-BF1D-BCB58FC8A283}
+		{9EE6455F-7D12-4342-863B-F615F2873C63} = {303D6DF0-E2E0-4692-B4D0-119C80DC2A90}
+		{65E47F74-9EFB-48FA-8219-714BBD70FECB} = {73FDBF14-77B5-4F73-BF1D-BCB58FC8A283}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EEBCB45-2C5D-4007-9CA0-C5432D499AF4}
