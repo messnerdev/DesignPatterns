@@ -7,7 +7,7 @@ namespace MonadElvisOperator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // See MyMethod
         }
 
         public void MyMethod(Person p)
@@ -40,12 +40,12 @@ namespace MonadElvisOperator
 
         private void CheckAddress(Address Address)
         {
-            throw new NotImplementedException();
+            //
         }
 
         private bool HasMedicalRecord(Person person)
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 
